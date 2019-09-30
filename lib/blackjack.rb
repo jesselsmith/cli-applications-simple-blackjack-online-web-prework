@@ -39,6 +39,7 @@ def hit? (current_total)
   else
     invalid_command
     prompt_user
+    hit? (current_total)
   end
   current_total
 end
@@ -54,6 +55,10 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  total = initial_round
+  total = hit? ( total )
+  display_card_total()
+  
 end
     
