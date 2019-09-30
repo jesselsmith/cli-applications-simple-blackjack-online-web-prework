@@ -40,7 +40,7 @@ def hit? (current_total)
     invalid_command
     prompt_user
   end
-  current_total
+  p current_total
 end
 
 
