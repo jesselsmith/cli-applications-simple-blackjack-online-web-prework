@@ -31,6 +31,7 @@ end
 def hit? (current_total)
   prompt_user
   user_input = get_user_input
+  p user_input
   if user_input == 's'
     #display_card_total(current_total)
   elsif user_input == 'h'
